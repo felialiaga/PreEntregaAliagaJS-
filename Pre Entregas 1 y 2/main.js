@@ -121,41 +121,68 @@ agendarBoton.addEventListener("click", () => {
     cuestionario.className = "cuestionario";
     cuestionario.innerHTML = `
         <input type="text" class="inputs" id="tipo" placeholder="Ingrese el tipo">
-        <input type="text" class="inputs" id="edad" placeholder="xx/xx">
+        <input type="text" class="inputs" id="fecha" placeholder="xx/xx">
         <input type="text" class="inputs" id="cantidad" placeholder="Cantidad de personas">
         <button id="agendarEvento">agendar</button>
     `;
 
-    agendar.append(cuestionario);  
+    agendar.append(cuestionario); 
 
-
-
-    // obtener valores de los inputs
-    // añadirlo al array
-    // subirlo al storage
-    // mostrarlo abajo
+    let agendarEvento = document.getElementById("agendarEvento");
     
+
+    agendarEvento.addEventListener("click", e => {
+
+        let fecha = document.getElementById("fecha");
+        let tipo = document.getElementById("tipo");
+        let cantidad = document.getElementById("cantidad");
+
+        if (evento.some(item => item.dia === fecha.value)){
+            cuestionario.innerHTML = `
+                <h4 class="rojo">Fecha ocupada!!</h4>
+            `;
+
+            agendar.append(cuestionario); 
+        }else {
+            evento.push(new Eventos(tipo.value, fecha.value, cantidad.value))
+
+            cuestionario.innerHTML = `
+                <h4 class="verde">Evento agendado!!</h4>
+            `;
+            agendar.append(cuestionario); 
+
+            localStorage.setItem("Eventos", JSON.stringify(evento));
+        }
+    }); 
 });
 
 
 
-entrarBoton.addEventListener("click", () => {
-
-});
 
 
 
+// agendarEvento.addEventListener("click", (e) => {
+//     e.preventDefault();
 
-evento.forEach(item => {
-    let resultado = document.createElement("div");
+    
+//     let fecha = document.getElementById("fecha");
+//     console.log(fecha.value);
 
-    resultado.className = "listado";
-    resultado.innerHTML = `
-        <h3>${item.tipo}</h3>
-        <h4>Fecha: ${item.dia}</h4>
-        <h4>Cantidad de personas: ${item.cantidad}</h4>
-    `;
 
-    eventos.append(resultado);
-});
+// });
+
+
+
+// evento.forEach(item => {
+//     let resultado = document.createElement("div");
+
+//     resultado.className = "listado";
+//     resultado.innerHTML = `
+//         <h3>${item.tipo}</h3>
+//         <h4>Fecha: ${item.dia}</h4>
+//         <h4>Cantidad de personas: ${item.cantidad}</h4>
+//     `;
+
+//     eventos.append(resultado);
+// });
 
