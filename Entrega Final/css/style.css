@@ -4,3 +4,19 @@
     box-sizing: border-box;
     user-select: none;
 }
+
+.boton{
+    text-decoration: none;
+    font-size: 2rem;
+    border: 1px solid #000;
+    border-radius: 14px;
+    padding: 1.5rem;
+    display: inline-flex;
+    margin: 5rem;
+    background-color: blanchedalmond;
+    color: #000;
+}
+
+.boton:hover{
+    background-color: rgb(225, 203, 169);
+}

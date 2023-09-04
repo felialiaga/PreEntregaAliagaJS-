@@ -1,0 +1,16 @@
+[
+    {"id": 1, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer1.jpeg"},
+    {"id": 2, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer2.jpeg"},
+    {"id": 3, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer3.jpeg"},
+    {"id": 4, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer6.jpeg"},
+    {"id": 5, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer13.jpeg"},
+    {"id": 6, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer17.jpeg"},
+    {"id": 7, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer18.jpeg"},
+    {"id": 8, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer25.jpeg"},
+    {"id": 9, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer21.jpeg"},
+    {"id": 10, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer44.jpeg"},
+    {"id": 11, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer39.jpeg"},
+    {"id": 12, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer41.jpeg"},
+    {"id": 13, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer32.jpeg"},
+    {"id": 14, "name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer36.jpeg"}
+]
