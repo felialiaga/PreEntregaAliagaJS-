@@ -5,6 +5,10 @@
     user-select: none;
 }
 
+body{
+    background-color: rgb(255, 246, 232);
+}
+
 .boton{
     text-decoration: none;
     font-size: 2rem;
@@ -19,4 +23,130 @@
 
 .boton:hover{
     background-color: rgb(225, 203, 169);
+}
+
+.tienda{
+    max-width: 90%;
+    margin: 5% auto;
+    display: flex;
+}
+
+.productos{
+    width: 63%;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 20%;
+    left: 5%;
+    background-color: rgb(242, 233, 218);
+}
+
+.carrito{
+    width: 25%;
+    height: 600px;
+    border: 1px solid #000;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20%;
+    right: 5%;
+}
+
+.card{
+    width: 250px;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 13px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    'img img img'
+    'img img img'
+    'name name name'
+    'price price price'
+    'menos agregar mas'
+    ;
+    margin: 1%;
+    background-color: #eee;
+}
+
+.productName{
+    grid-area: name;
+    margin: 1% 0;
+    text-align: center;
+}
+
+.productPrice{
+    grid-area: price;
+    text-align: center;
+    margin: 1% 0;
+}
+
+.productImg{
+    grid-area: img;
+    width: 240px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 13px;
+    margin: 1% auto;
+}
+
+#menos{
+    grid-area: menos;
+    border: none;
+    border-bottom-left-radius: 13px;
+    padding: 5%;
+}
+
+#agregar{
+    grid-area: agregar;
+    border: none;
+    padding: 5%;
+}
+
+#mas{
+    grid-area: mas;
+    border: none;
+    border-bottom-right-radius: 13px;
+    padding: 5%;
+}
+
+#newProduct{
+    padding: 1rem;
+    border: none;
+    border-radius: 13px;
+    position: relative;
+    top: 5%;
+    left: 5%;
+    margin: 3%;
+}
+
+#newProducts{
+    width: 60%;
+    text-align: center;
+}
+
+#productName, #productPrice, #productImg {
+    padding: 2%;
+    border: none;
+    border-radius: 14px;
+    margin: 4% 0;
+}
+
+#create{
+    padding: 1rem;
+    border: none;
+    border-radius: 13px;
+}
+
+#menos:hover, #agregar:hover, #mas:hover{
+    background-color: #ddd;
 }
