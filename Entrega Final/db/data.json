@@ -1,16 +1,8 @@
 [
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer1.jpeg"},
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer2.jpeg"},
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer3.jpeg"},
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer6.jpeg"},
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer13.jpeg"},
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer17.jpeg"},
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer18.jpeg"},
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer25.jpeg"},
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer21.jpeg"},
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer44.jpeg"},
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer39.jpeg"},
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer41.jpeg"},
-    {"name": "Prenda de mujer", "price": 10.000, "img": "../images/mujer/mujer32.jpeg"},
-    {"name": "Prenda de mujer", "price": 10000, "img": "../images/mujer/mujer36.jpeg"}
+    {"id": 1, "name": "Prenda de  mujer", "price": 15000, "img": "../images/mujer/mujer28.jpeg"},
+    {"id": 1, "name": "Prenda de  mujer", "price": 15000, "img": "../images/mujer/mujer14.jpeg"},
+    {"id": 1, "name": "Prenda de  mujer", "price": 15000, "img": "../images/mujer/mujer39.jpeg"},
+    {"id": 1, "name": "Prenda de  mujer", "price": 15000, "img": "../images/mujer/mujer5.jpeg"},
+    {"id": 1, "name": "Prenda de  mujer", "price": 15000, "img": "../images/mujer/mujer8.jpeg"},
+    {"id": 1, "name": "Prenda de  mujer", "price": 15000, "img": "../images/mujer/mujer21.jpeg"}
 ]

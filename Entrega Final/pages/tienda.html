@@ -8,28 +8,113 @@
     </head>
     <body>
 
-        <div id="buttons">
-            <button id="newProduct">New Product</button>  
-        </div>
 
-        <div id="newProducts">
-            
-        </div>
+        <header>
+            <nav>
+                <p class="navTitle">E-commerce</p>
+                <ul class="navList">
+                    <li><a href="#" class="navItems">Inicio</a></li>
+                    <li><a href="#" class="navItems">Inicio</a></li>
+                    <li><a href="#" class="navItems">Inicio</a></li>
+                    <li><a href="#" class="navItems">Inicio</a></li>
+                </ul>
+                <button class="navButton">Crear cuenta</button>
+            </nav>
+        </header>
+
+        
 
         <main class="tienda">
+
+            <div class="superiorPart">
+                <div class="filters">
+                    <p class="filtersTitle">Filters: </p>
+                    <select class="categories">
+                        <option disabled hidden selected>Categories</option>
+                        <option value="dress">Dress</option>
+                        <option value="t-shirts">T-shirts</option>
+                        <option value="pants">Pants</option>
+                        <option value="shoes">Shoes</option>
+                        <option value="all">All</option>
+                    </select>
+        
+                    <select class="price">
+                        <option disabled hidden selected>Price</option>
+                        <option value="ascendant">Ascendant</option>
+                        <option value="descending">Descending</option>
+                    </select>
+        
+                    <select class="name">
+                        <option disabled hidden selected>Name</option>
+                        <option value="ascendant">Ascendant</option>
+                        <option value="descending">Descending</option>
+                    </select>
+        
+                    <p class="searchTitle">Search your products here:</p>
+                    <input type="text" id="searchInput" placeholder="Search product">
+                    <button id="searchButton">Search</button>
+        
+                    <button id="filter" class="filter">Filter</button>
+                </div>
+    
+                <div class="cart">
+                    <div id="btnCart">
+                        <img src="../images/cart.png" id="cart">
+                        <p id="contador__carrito"></p>
+                    </div>
+                </div>
+            </div>
+
+
+    
+            <div>
+                <div id="userLogin"></div>
+            </div>
+    
+            <!-- <div id="buttons">
+                <button id="newProduct">New Product</button>  
+            </div>
+    
+            <div id="newProducts">
+                
+            </div> -->
 
             <div id="productos" class="productos">
                 
             </div>
+            
+            <h2 class="outstandingTitle">Ours Outstandings Products</h2>
+
+            <div id="outstandingProducts"></div>
     
             <div id="carrito" class="carrito">
-                <h1>Carrito Vacio</h1>
+                <table>
+                    
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Units</th>
+                            <th>Unitarie cost</th>
+                            <th>Total cost</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items"></tbody>
+                    <tfoot id="totals"></tfoot>
+                </table>
             </div>
         </main>
 
-        <a href="../index.html" class="boton">Volver</a>
         
     
-        <script src="../js/main.js "></script>
+        <script type="module" src="../db/productos.js"></script>
+        
+    
+        <script type="module" src="../js/inicio.js"></script>
+        <script type="module" src="../js/carrito.js"></script>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     </body>
 </html>
